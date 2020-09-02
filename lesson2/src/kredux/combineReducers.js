@@ -1,7 +1,6 @@
 // 多哥
 export default function combineReducers(reducers) {
     return function combination(state={},action) {
-        debugger
         let nextState = {};
         let hasChanged = false;
         for(let key in reducers){

@@ -30,13 +30,19 @@ export default class ReduxPage extends Component {
     });
   };
 
+  add2 = () => {
+    store.dispatch({type: "ADD2", payload: 100})
+  }
+
   render() {
     return (
       <div>
         <h3>ReduxPage</h3>
         <p>{store.getState().count}</p>
+        <p>{store.getState().count2.num}</p>
         <button onClick={this.add}>add</button>
         <button onClick={this.asyAdd}>asy add</button>
+        <button onClick={this.add2}>add num</button>
       </div>
     );
   }

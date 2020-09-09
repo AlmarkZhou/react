@@ -1,4 +1,5 @@
-import fetch from 'dva/fetch';
+//const fetch = require('dva').fetch;
+import fetch from 'dva/fetch'
 
 function parseJSON(response) {
   return response.json();

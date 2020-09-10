@@ -1,5 +1,5 @@
 const productTableData = [];
-for (let i = 0; i < 10; i++) {
+for (let i = 1; i < 21; i++) {
   productTableData.push({
     id: i,
     name: "名字" + i,
